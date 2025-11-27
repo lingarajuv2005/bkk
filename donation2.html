@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate | Bommasandra Kalika Kendra</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- this is use of navbar alinement -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/donation2.css">
+</head>
+<body>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Bommasandra Kalika Kendra</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="get-involved.html">Get-Involved</a></li>
+            <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+            <li class="nav-item"><a class="nav-link" href="news-events.html">News & Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    
+    <div class="donation-bg">
+        <div class="donation-container">
+            <div class="donation-card">
+                <h1 class="donation-title">Bommasandra Kalika Kendra</h1>
+                <p class="donation-subtitle">
+                    Donate online for children's education <br>
+                    Help underprivileged children get access to learning and opportunities.
+                </p>
+
+                <form id="donationForm" class="donation-form">
+
+                    <!-- Donation Amount Section -->
+                    <div class="donation-type">
+                        <label>
+                            <input type="radio" name="donationType" value="one-time" >
+                            One-Time
+                        </label>
+                        <label>
+                            <input type="radio" name="donationType" value="monthly" checked>
+                            Monthly
+                        </label>
+                    </div>
+
+                    <div class="amount-options">
+                        <button type="button" class="amount-btn" data-amount="500">₹500</button>
+                        <button type="button" class="amount-btn" data-amount="1000">₹1000</button>
+                        <button type="button" class="amount-btn" data-amount="1500">₹1500</button>
+                        <button type="button" class="amount-btn" data-amount="2000">₹2000</button>
+                        <input type="number" id="customAmount" class="custom-amount" placeholder="Custom Amount">
+                    </div>
+
+                    <!-- Personal Details -->
+                    <div class="form-group">
+                        <input type="text" id="fullName" placeholder="Full Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" id="mobile" placeholder="Mobile Number" required>
+                    </div>
+
+                    <!-- Address Section -->
+                    <div class="form-group">
+                        <input type="text" id="address" placeholder="Address" required>
+                    </div>
+
+                    <div class="form-row">
+                        <input type="text" id="city" placeholder="City" required>
+                        <input type="text" id="state" placeholder="State" required>
+                    </div>
+
+                    <div class="form-row">
+                        <input type="text" id="pincode" placeholder="Pincode" required>
+                    </div>
+
+                    <button type="button" id="donateBtn" class="donate-btn">Contribute Now</button>
+
+                    <div class="secure-badge">
+                        🔒 100% Secure Payment via Razorpay
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ✅ Confirmation Popup -->
+    <div class="confirm-popup-overlay" id="confirmPopup">
+        <div class="confirm-popup">
+            <h3>Confirm Donation</h3>
+            <p class="confirm-amount" id="confirmAmountText"></p>
+            <p class="confirm-type" id="confirmTypeText"></p>
+            <div class="confirm-buttons">
+                <button id="confirmYes" class="confirm-btn">Confirm</button>
+                <button id="confirmNo" class="cancel-btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/donation2.js"></script>
+</body>
+</html>

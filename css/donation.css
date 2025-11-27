@@ -1,0 +1,67 @@
+/* Basic reset */
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; }
+html,body { height: 100%; background: #fffaf6; color: #222; }
+
+/* Header */
+.site-header { background: #111; color: #fff; padding: 12px 20px; position: sticky; top: 0; z-index: 30; }
+.brand { display:flex; align-items:center; justify-content:space-between; max-width:1200px; margin:0 auto; }
+.logo { background:#ffd54a; color:#111; padding:6px 12px; border-radius:8px; font-weight:700; }
+.donate-btn { background:#ffd54a; border:none; padding:8px 14px; border-radius:999px; font-weight:600; cursor:pointer; }
+
+/* Page layout */
+.page { max-width:1200px; margin:24px auto; padding:0 16px; }
+.hero1 { display:flex; gap:24px; align-items:flex-start; }
+
+/* hero left */
+.hero-left { flex:1; padding:30px 20px; background:linear-gradient(90deg,#fff,#fff0); border-radius:12px; }
+.hero-left h1 { font-size:28px; margin-bottom:8px; color:#333; }
+.lead { color:#666; line-height:1.5; }
+
+/* Donation card (right side floating) */
+.donation-card { width:380px; background:linear-gradient(180deg,#fff,#fff); border-radius:14px; box-shadow:0 10px 30px rgba(20,20,20,0.12); padding:18px; position:sticky; top:90px; height:fit-content; align-self:start; }
+.card-inner { display:flex; flex-direction:column; gap:12px; }
+.card-title { font-weight:700; color:#222; font-size:18px; }
+
+/* Toggle */
+.toggle-row { display:flex; gap:8px; }
+.toggle { flex:1; padding:10px;border-radius:10px; border:1px solid #eee; background:#fff; cursor:pointer; font-weight:600; }
+.toggle.active { background:#fff2d6; border:1px solid #ffd54a; box-shadow:0 6px 14px rgba(255, 213, 74, .12); }
+
+/* Amount pills */
+.preset-amounts { display:flex; gap:8px; flex-wrap:wrap; }
+.amount-pill { padding:8px 12px; border-radius:999px; border:1px solid #eee; background:#fff; cursor:pointer; font-weight:700; transition:transform .12s ease, box-shadow .12s ease; }
+.amount-pill.active { background:#e7a01b; transform:translateY(-3px); box-shadow:0 8px 18px rgba(0,0,0,0.08); color:#111; }
+
+/* Custom amount */
+.custom-amount label { font-size:12px; color:#666; display:block; margin-bottom:6px; }
+.custom-amount input { width:100%; padding:10px; border-radius:10px; border:1px solid #eee; }
+
+/* Form */
+#donationForm { display:flex; flex-direction:column; gap:10px; }
+.form-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
+.form-grid input, textarea { padding:10px; border-radius:10px; border:1px solid #eee; }
+.address-block textarea { width:100%; resize:vertical; }
+.row { display:flex; gap:8px; margin-top:8px; }
+.row input { flex:1; }
+
+/* Checkbox */
+.checkbox-row { font-size:13px; color:#444; }
+
+/* summary */
+.summary { display:flex; align-items:center; justify-content:space-between; padding:10px; background:#fffaf0; border-radius:10px; border:1px solid #fff0; }
+.summary-amount { font-weight:800; color:#111; font-size:16px; }
+
+/* Actions */
+.form-actions { display:flex; gap:8px; }
+.primary { flex:1; background:#e7a01b; border:none; padding:12px; border-radius:10px; font-weight:700; cursor:pointer; box-shadow:0 6px 18px rgba(255,213,74,0.12); }
+
+/* Note text */
+.note { font-size:12px; color:#666; margin-top:6px; }
+
+/* Responsive */
+@media (max-width: 980px) {
+  .hero1 { flex-direction:column; }
+  .donation-card { width:100%; position:relative; top:0; }
+  .form-grid { grid-template-columns:1fr; }
+  .row { flex-direction:column; }
+}

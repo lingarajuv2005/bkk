@@ -1,0 +1,139 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  /* Background image with blur effect */
+  background: url('your-background-image.jpg') no-repeat center center/cover;
+  position: relative;
+}
+
+/* Gradient overlay */
+body::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 5rem;
+  background: linear-gradient(180deg, rgba(255, 215, 0, 0.7), rgba(255, 223, 0, 0.7));
+  backdrop-filter: blur(5px);
+  z-index: 0;
+}
+
+
+.container1 {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.involved-intro h1 {
+  font-size: 3rem;
+  color: #333;
+  text-align: center;
+}
+
+.involved-intro a {
+  text-decoration: none;
+  color: black;
+}
+
+
+
+
+
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.section.text-left .content {
+  order: 1;
+  flex: 1 1 500px;
+}
+
+.section.text-left .image {
+  order: 2;
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.section.image-left .content {
+  order: 2;
+  flex: 1 1 500px;
+}
+
+.section.image-left .image {
+  order: 1;
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.section p {
+  font-size: 1.2rem;
+  color: #222;
+  line-height: 1.6;
+}
+
+.section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Button Style */
+.get-involved-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  color: #fff;
+  background: linear-gradient(90deg, #FFD700, #FFC107);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.get-involved-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 900px) {
+  .section {
+    flex-direction: column;
+  }
+  .section.text-left .content,
+  .section.text-left .image,
+  .section.image-left .content,
+  .section.image-left .image {
+    order: unset;
+    flex: 1 1 100%;
+  }
+  
+  body::before {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 7rem;
+  }
+}
+

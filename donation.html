@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Donate — Children's Education</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- this is use of navbar alinement -->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/donation3.css" rel="stylesheet">
+  <!-- Razorpay checkout script -->
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Bommasandra Kalika Kendra</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="get-involved.html">Get-Involved</a></li>
+            <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+            <li class="nav-item"><a class="nav-link" href="news-events.html">News & Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    
+  <header class="site-header">
+    <div class="brand-bar">
+      <a href="index.html" class="logo" style="text-decoration: none;">BKK</span>
+      <a href="#donationCard" class="donate-btn" style="text-decoration: none;">Donate Now</a>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="hero1">
+      <div class="hero-left">
+        <h1>Donate online for children's education</h1>
+        <p class="lead">
+          Help underprivileged children get access to learning and opportunities.
+        </p>
+      </div>
+
+      <!-- Right card (the donation form) -->
+      <aside class="donation-card" id="donationCard">
+        <div class="card-inner">
+          <h2 class="card-title">Yes! I like to help</h2>
+
+          <div class="toggle-row">
+            <button id="btnOneTime" class="toggle active">One Time</button>
+            <button id="btnMonthly" class="toggle">Monthly</button>
+            <button id="btnYearly" class="toggle">Yearly</button>
+          </div>
+          <div class="preset-amounts" id="presetAmounts">
+            <!-- Buttons will be generated dynamically -->
+          </div>
+          <div class="custom-amount">
+            <label for="customAmount">Or enter custom amount (₹)</label>
+            <input id="customAmount" type="number" placeholder="e.g. 750" min="1" />
+          </div>
+
+
+          <!-- <div class="preset-amounts" id="presetAmounts">
+            <button class="amount-pill" data-amount="500">₹500</button>
+            <button class="amount-pill" data-amount="1000">₹1,000</button>
+            <button class="amount-pill" data-amount="2000">₹2,000</button>
+            <button class="amount-pill" data-amount="5000">₹5,000</button>
+          </div>
+
+          <div class="custom-amount">
+            <label for="customAmount">Or enter custom amount (₹)</label>
+            <input id="customAmount" type="number" placeholder="e.g. 750" min="1" />
+          </div> -->
+
+          <form id="donationForm" autocomplete="off" novalidate>
+            <div class="form-grid">
+              <input id="fullName" name="fullName" placeholder="Full Name *" required />
+              <input id="email" name="email" type="email" placeholder="Email *" required />
+              <input id="mobile" name="mobile" type="tel" placeholder="Mobile Number *" required maxlength="10" />
+              <input id="pan" name="pan" placeholder="PAN Number (Optional)" />
+            </div>
+
+            <div class="address-block">
+              <textarea id="address" name="address" placeholder="Address (line)" rows="2"></textarea>
+              <div class="row">
+                <input id="city" name="city" placeholder="City" />
+                <input id="state" name="state" placeholder="State" />
+                <input id="pincode" name="pincode" placeholder="PIN" maxlength="6" />
+              </div>
+            </div>
+
+            <!-- <div class="checkbox-row">
+              <label><input id="taxReceipt" type="checkbox" /> I want 80G tax-exemption receipt</label>
+            </div> -->
+
+            <div class="summary">
+              <div>Selected:</div>
+              <div class="summary-amount" id="summaryAmount">₹0</div>
+            </div>
+
+            <div class="form-actions">
+              <button id="payBtn" type="submit" class="primary">Continue to Pay</button>
+            </div>
+
+            <small class="note">We use secure payment (Razorpay). You will be redirected to complete payment.</small>
+          </form>
+        </div>
+      </aside>
+    </section>
+
+    <!-- rest of page content (impact cards, map etc.) can go here -->
+  </main>
+
+  <footer>
+    <p>© 2025 Bommasandra Kalika Kendra. All rights reserved.</p>
+  </footer>
+
+  <script src="js/donation.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

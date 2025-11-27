@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  background: linear-gradient(to bottom, #fff4e3, #fde8c7);
+  font-family: 'Poppins', sans-serif;
+  color: #4b2e05;
+}
+
+.audio-toggle {
+  position:absolute;
+  top: 50px;
+  right: 20px;
+  font-size: 50px;
+  cursor: pointer;
+  z-index: 2000;
+  user-select: none;
+}
+
+/* /* .about-container {
+  text-align: center;
+  padding: 60px 20px;
+} */
+
+
+
+.about-title {
+  color: #ba6400;
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+  align-items: center;
+  text-shadow: 0 0 8px rgba(255, 168, 63, 0.4);
+}
+@media (max-width: 768px) {
+  .about-title {
+    font-size: 25px;
+  }
+}
+/* .about-img1 {
+  width: 10px;
+  height: 20px;
+  object-fit: center;
+  position: cover;
+} */
+
+/* .about-intro {
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto 40px;
+  color: #5d3b0a;
+  line-height: 1.7;
+} */
+
+
+
+
+
+
+.about-section {
+  /* background-color: #f9f9f9; */
+  padding: 60px 10%;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+
+.about-image img {
+  width: 450px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.about-content {
+  flex: 1;
+}
+
+.about-content h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  color: #555;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-container,
+  .about-container.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .about-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-content p {
+    font-size: 1rem;
+  }
+}
+
+
+.about-sections {
+   align-items: center;
+   padding: 60px 10%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-sections {
+    padding: 0 0;
+    margin: 20px;
+  }
+}
+
+
+.about-sections {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: start;
+  justify-content: space-evenly;
+  gap: 60px;
+}
+
+.about-card {
+  background: #fffaf2;
+  border-radius: 20px;
+  width: 350px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  transition: transform .3s, box-shadow .3s;
+}
+
+.about-card img {
+  width: 100%;
+  border-radius: 15px;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+.about-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(255, 140, 0, 0.4);
+}
+
+.about-card h2 {
+  margin-top: 15px;
+  color: #b35600;
+}

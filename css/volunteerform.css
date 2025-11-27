@@ -1,0 +1,92 @@
+/* volunteer.css - simple, elegant form */
+:root{
+  --primary: #ba6400;
+  --bg: #fffaf7;
+  --text:#4b2e05;
+  --muted:#6b4b2a;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: "Poppins", system-ui, sans-serif;
+  background: linear-gradient(180deg,#fff7ea,#fffaf7);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+}
+
+.volunteer-root{
+  max-width:720px;
+  margin:40px auto;
+  padding:28px;
+  background: #fffefc;
+  border-radius:12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+
+h1{ margin:0 0 6px; color:var(--primary)}
+.lead{ margin:0 0 18px; color:var(--muted) }
+
+.volunteer-form label{
+  display:block;
+  margin-bottom:12px;
+  font-weight:600;
+  color:var(--muted);
+}
+
+.volunteer-form input[type="text"],
+.volunteer-form input[type="email"],
+.volunteer-form input[type="tel"],
+.volunteer-form textarea {
+  width:100%;
+  padding:10px 12px;
+  border-radius:8px;
+  border:1px solid #eee;
+  margin-top:6px;
+  font-size:1rem;
+  color:var(--text);
+  background:#fff;
+}
+
+.volunteer-form textarea { resize:vertical; }
+
+.form-actions{
+  display:flex;
+  gap:12px;
+  margin-top:14px;
+  align-items:center;
+}
+
+.btn{
+  padding:10px 16px;
+  border-radius:10px;
+  border:0;
+  cursor:pointer;
+  font-weight:700;
+}
+
+.btn.primary{
+  background:var(--primary);
+  color:#fff;
+}
+
+.btn.ghost{
+  background:transparent;
+  border:2px solid rgba(0,0,0,0.06);
+  color:var(--muted);
+}
+
+.form-message{
+  margin-top:12px;
+  font-weight:600;
+}
+
+.form-message.success{ color:green; }
+.form-message.error{ color:#b00020; }
+
+/* responsive */
+@media (max-width:600px){
+  .volunteer-root{ margin:14px; padding:18px }
+}
+
+

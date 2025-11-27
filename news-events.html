@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>News & Events | Bommasandra Kalika Kendra</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- this is use of navbar alinement -->
+  <link href="css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/news-events.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">Bommasandra Kalika Kendra</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="get-involved.html">Get-Involved</a></li>
+            <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+            <li class="nav-item"><a class="nav-link" href="news-events.html">News & Events</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <section class="news-controls">
+        <form id="newsFilters" autocomplete="off">
+            <input type="text" id="searchBox" class="search-box" placeholder="Search news or events..." />
+
+            <select id="filterType" class="filter-dropdown">
+                <option value="">All Types</option>
+                <option value="event">Events</option>
+                <option value="news">News</option>
+            </select>
+
+            <select id="sortBy" class="filter-dropdown">
+                <option value="latest">Sort by: Latest</option>
+                <option value="oldest">Sort by: Oldest</option>
+                <option value="title">A-Z Title</option>
+            </select>
+        </form>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <main class="main-content">
+    <section class="page-header">
+      <h1>News & Events</h1>
+      <p class="lead">Stay updated with the latest activities, announcements, and stories from Bommasandra Kalika Kendra.</p>
+    </section>
+
+    <!-- News Cards: Copy and repeat for future news/events -->
+    <section class="news-list">
+
+      <article class="news-card" data-url="events-html/childrens-day.html">
+        <img src="Images/demo.png" alt="Children's Day Celebration">
+        <div class="news-content">
+          <h2>Children's Day Celebration</h2>
+          <p class="news-date">November 14, 2025</p>
+          <p>
+            Our centers organized special events for Children's Day, featuring games, art sessions, and motivational talks from guest educators.
+          </p>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <img src="Images/demo.png" alt="Community Health Camp">
+        <div class="news-content">
+          <h2>Community Health Camp</h2>
+          <p class="news-date">October 28, 2025</p>
+          <p>
+            Volunteer doctors and professionals offered free check-ups and health awareness classes to families in our neighborhood.
+          </p>
+        </div>
+      </article>
+
+      <article class="news-card" data-url="events-html/cycle-donation-drive.html">
+        <img src="Images/demo.png" alt="Cycle Donation Drive">
+        <div class="news-content">
+          <h2>Cycle Donation Drive</h2>
+          <p class="news-date">November 25, 2025</p>
+          <p>
+            Thanks to our generous donors, we were able to provide bicycles to over 50 students, helping them commute to school more easily.
+          </p>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <img src="images/annual-report.jpg" alt="2025 Annual Report Released">
+        <div class="news-content">
+          <h2>2025 Annual Report Released</h2>
+          <p class="news-date">October 10, 2025</p>
+          <p>Our annual report shares program achievements, volunteer stories, and future plans. Read more in the full report!</p>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <img src="images/teacher-training.jpg" alt="Teacher Training Workshop">
+        <div class="news-content">
+          <h2>Teacher Training Workshop</h2>
+          <p class="news-date">September 18, 2025</p>
+          <p>Local educators attended a hands-on workshop on creative teaching, classroom inclusion, and education technology.</p>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <img src="images/summer-art-camp.jpg" alt="Summer Art Camp">
+        <div class="news-content">
+          <h2>Summer Art Camp</h2>
+          <p class="news-date">August 5, 2025</p>
+          <p>Children explored drawing, painting, and crafts with local artists and volunteers.</p>
+        </div>
+      </article>
+
+      <article class="news-card" data-type="event">
+        <img src="images/independence-day.jpg" alt="Independence Day">
+        <div class="news-content">
+          <div class="type-badge event">Event</div>
+          <h2>Independence Day</h2>
+          <p class="news-date">August 15, 2025</p>
+          <p>Cultural performances, flag hoisting, and patriotic speeches celebrated Independence Day.</p>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <img src="images/parent-counseling.jpg" alt="Parent Counseling Session">
+        <div class="news-content">
+          <h2>Parent Counseling Session</h2>
+          <p class="news-date">July 24, 2025</p>
+          <p>Guidance for parents to help strengthen support for children's learning and wellbeing.</p>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <img src="images/literacy-walk.jpg" alt="Literacy Awareness Walk">
+        <div class="news-content">
+          <h2>Literacy Awareness Walk</h2>
+          <p class="news-date">July 10, 2025</p>
+          <p>Students and teachers spread the message of reading and literacy in the local community.</p>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <img src="images/volunteer-meetup.jpg" alt="Volunteer Meetup">
+        <div class="news-content">
+          <h2>Volunteer Meetup</h2>
+          <p class="news-date">June 27, 2025</p>
+          <p>Volunteers gathered to plan future programs, share stories, and welcome newcomers.</p>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <img src="images/library-opening.jpg" alt="New Library Opening">
+        <div class="news-content">
+          <h2>New Library Opening</h2>
+          <p class="news-date">June 12, 2025</p>
+          <p>The community celebrated the opening of a new library, offering books and study space.</p>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <img src="images/sports-day.jpg" alt="Sports Day Event">
+        <div class="news-content">
+          <h2>Sports Day Event</h2>
+          <p class="news-date">May 20, 2025</p>
+          <p>Students enjoyed athletic competitions fostering teamwork, spirit, and healthy habits.</p>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <img src="images/nutrition-workshop.jpg" alt="Nutrition Workshop">
+        <div class="news-content">
+          <h2>Nutrition Workshop</h2>
+          <p class="news-date">May 5, 2025</p>
+          <p>Health experts discussed balanced diets and nutrition for students and caregivers.</p>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <img src="images/exam-tips.jpg" alt="Exam Success Tips Seminar">
+        <div class="news-content">
+          <h2>Exam Success Tips Seminar</h2>
+          <p class="news-date">April 18, 2025</p>
+          <p>Trainers shared effective study strategies and stress management skills before exams.</p>
+        </div>
+      </article>
+
+      <article class="news-card">
+        <img src="images/cleanliness-drive.jpg" alt="Cleanliness Drive">
+        <div class="news-content">
+          <h2>Cleanliness Drive</h2>
+          <p class="news-date">March 28, 2025</p>
+          <p>Students led efforts to clean community areas and educate others on hygiene.</p>
+        </div>
+      </article>
+
+      <!-- Add more articles below as needed -->
+      <!--
+      <article class="news-card">
+        <img src="images/event3.jpg" alt="Event Title">
+        <div class="news-content">
+          <h2>Event Title</h2>
+          <p class="news-date">Event Date</p>
+          <p>
+            Short description of what happened, who participated, or why the event matters.
+          </p>
+        </div>
+      </article>
+      -->
+    </section>
+  </main>
+
+
+
+
+
+    <footer>
+        <p>© 2025 Bommasandra Kalika Kendra. All rights reserved.</p>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/news-events.js"></script>
+</body>
+</html>
